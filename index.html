@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/0154eaa65f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <div id="headerId" class="header">
+        <nav class="nav">
+            <ul id="sidemenu">
+                <li><a href="#headerId">Home</a></li>
+                <li><a href="#bodyId">About</a></li>
+                <li><a href="#works">Services</a></li>
+                <li><a href="#contactId">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-xmark fa-2xl" onclick="closeMenu()"></i>
+            <i class="fa-solid fa-bars fa-2xl" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-content">
+            <div class="image"></div>
+            <div class="text">
+                <p>I am <span>Sakresh<br></span>I am a <span>Mobile</span> and <br> <span>Web Application Developer</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="STop" onclick='goToTop()'>
+       <i class="fa-solid fa-angle-up fa-2xl"></i>
+    </div>
+    
+    <!-- About -->
+
+    <div id="bodyId" class="body">
+        <img src="Assets/hills_new.jpg">
+        <div class="about">
+            <h1>About</h1>
+            <p>I'm Sakresh and I am a self made Web and Mobile Application Developer. I have developed Mobile Applications using Flutter platform and also can work on GraphQL for data connectivity. On the other hand I also create Web Applications with HTML5, CSS and JavaScript and still diving deep into the world of JavaScript. I am currently working on JavaScript and will get expertised in JavaScript.</p>
+            <div class="tabs">
+                <p class="tab-links active" onclick="tabs('skill')" >Skills</p>
+                <p class="tab-links" onclick="tabs('education')">Education</p>
+                <p class="tab-links" onclick="tabs('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+                <ul>
+                    <li><span><b>Flutter</b></span><br>Application Development</li><br>
+                    <li><span><b>Front-End</b></span><br>Web Development</li><br>
+                    <li><span><b>GraphQL</b></span><br>DataBase Connection</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span><b>High School</b></span><br>Ck School Cuddalore</li><br>
+                    <li><span><b>Higher Secondary</b></span><br>Amalorpavam Puducherry</li><br>
+                    <li><span><b>Bachelor's Degree</b></span><br>Pursuing at SMVEC Puducherry</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul> 
+                    <li><span><b>Flutter Developer</b></span><br>Appikorn Consultancy Services Puducherry</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- works -->
+
+    <div id="works">
+            <div class="container">
+                <h1>My Services</h1>
+                <div class="service-list">
+                    <div class="w">
+                        <i class="fa-brands fa-app-store fa-xl"></i>
+                        <h2 id="text">
+                            Mobile App Development
+                        </h2>
+                        <p>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Hence, the mobile development process involves creating installable software bundles (code, binaries, assets, etc.) , implementing backend services such as data access with an API, and testing the application on target devices</p>
+                        <i class="fa-light fa-mobile"></i>
+                    </div>
+                    <div class="w">
+                        <i class="fa-solid fa-code fa-xl"></i>
+                        <h2 id="text">
+                            Web-Development
+                        </h2>
+                        <p>Web application development is the creation of application programs that reside on remote servers and are delivered to the user’s device over the Internet. A web application (web app) does not need to be downloaded and is instead accessed through a network. An end user can access a web application through a web browser such as Google Chrome, Safari, or Mozilla Firefox. A majority of web applications can be written in JavaScript, Cascading Style Sheets (CSS), and HTML5
+                        </p>
+
+                    </div>
+                    <div class="w">
+                        <i class="fa-brands fa-linux fa-2xl"></i>
+                        <h2 id="text">
+                            Linux-Shell
+                        </h2>
+                        <p>A bash script is a file containing a sequence of commands that are executed by the bash program line by line. It allows you to perform a series of actions, such as navigating to a specific directory, creating a folder, and launching a process using the command line</p>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contactId" class="contact">
+        <div class="info">
+            <h2>Contact Info</h2>
+            <p><i class="fa-solid fa-envelope fa-xl"></i>sakreshwk@gmail.com</p>
+            <div class="social-media">
+                <a href="https://github.com/sakresh" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/sakresh-s-278444206/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://www.instagram.com/_s_a_k_r_e_s_h_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <a href="Assets/resume_new.pdf" download class="btn">Download CV</a>
+        </div>
+        <form name="" class="form">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email-Id" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+                
+                
