@@ -33,12 +33,14 @@ html{
     bottom: 20px;
 }
 
-/* .fa-xmark{
+.fa-xmark{
     display: none;
-} */
+    color: black;
+}
 
 .fa-bars{
     display: none;
+    color: black;
 }
 
 .fa-angle-up{
@@ -126,7 +128,7 @@ html{
 
 .body img{
     height: 800px;
-    width: 500px;
+    width: 550px;
     border-radius: 20px;
     margin: 40px;
 }
@@ -471,7 +473,7 @@ html{
 
     .body img{
         height: 500px;
-        width: 300px;
+        width: 350px;
     }
     .body h1{
         font-size: 2rem;
